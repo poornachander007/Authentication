@@ -1,0 +1,39 @@
+GET http://localhost:3000/ 
+### 
+GET http://localhost:3000/all
+###
+
+// Add User API (1)
+POST http://localhost:3000/register 
+Content-Type: application/json 
+
+{
+  "username": "kalachander007",
+  "name": "kalachander",
+  "password": "kala123@mana",
+  "gender": "male",
+  "location": "Hyderabad"
+}
+### 
+
+// User Login API (2)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "poornachander",
+  "password": "poorna@123"
+}
+### 
+
+// Change Password API (3)
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "poornachander",
+  "oldPassword": "poorna@123",
+  "newPassword": "poorna@321"
+}
+### 
+
